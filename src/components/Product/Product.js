@@ -1,12 +1,14 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
+import img1 from '../../images/ware1.png';
+
 class Product extends React.Component {
     render() {
         return (
             <div className="wrapper">
                 <div className="product-img">
-                    <img src="http://bit.ly/2tMBBTd" height="420" width="327" />
+                    <img src={img1} height="420" width="327" />
                 </div>
                 <div className="product-info">
                     <div className="product-text">
