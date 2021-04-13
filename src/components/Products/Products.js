@@ -12,8 +12,8 @@ class Products extends React.Component {
         const response = await axios.get("http://localhost:8080/api/get_info");
         console.log(response.data);
         for (let i = 0; i < response.data.length; i++) {
-            let x = (response.data[i].x_cord / 20) - 1;
-            let y = (response.data[i].y_cord / 20) - 1;
+            let x = (response.data[i].x_cord / 8) - 1;
+            let y = (response.data[i].y_cord / 8) - 1;
             let z = 6 - x;
             let index = x * (x + z) + y;
             console.log(index);

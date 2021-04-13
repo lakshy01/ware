@@ -4,6 +4,12 @@ import { connect } from 'react-redux';
 import img1 from '../../images/ware1.png';
 
 class Product extends React.Component {
+
+    // x = (this.props.product.x_cord / 8) - 1;
+    // y = (this.props.product.y_cord / 8) - 1;
+    // z = 6 - x;
+    // index = x * (x + z) + y;
+
     render() {
         return (
             <div className="wrapper">
@@ -18,6 +24,7 @@ class Product extends React.Component {
                         <h2>{this.props.product.date_of_entry}</h2>
                         <h2>{this.props.product.date_of_expiry}</h2>
                         <h2>{this.props.product.item_Type}</h2>
+                        {/* <h2>{this.index}</h2><h2>{this.index}</h2> */}
                     </div>
                 </div>
             </div>

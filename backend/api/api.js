@@ -16,7 +16,7 @@ Router.route('/add_product')
 
         // 1 unit - 20cm
 
-        let scale_quant = 20;
+        let scale_quant = 8;
 
         ProductDetail.find((err, products) => {
 
